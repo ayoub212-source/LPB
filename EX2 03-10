@@ -1,3 +1,5 @@
+ENONCE
+//////////////////////////////////////////////////////////////////////////
 -Encoder une valeur entiere
 -SI val est >0 ET < 5 afficher ">0 et <5"
 -SI val est = 7 OU =10 afficher "=7 ou =10" 
