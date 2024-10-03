@@ -1,3 +1,13 @@
+ENONCE
+//////////////////////////////////////////////////////////
+\\Demande un nombre entier
+\\Si le nombre <10 alors ecris bonjour 
+\\Si le nombre est un multiple de 10 ecrire a demain
+\\Si ne rentre pas dans les conditions, ecrire au revoir
+//////////////////////////////////////////////////////////
+
+CODE : 
+
 \\ Module principal
 DÉBUT     
     ECRIRE "Veuillez introduire une valeur : " 
