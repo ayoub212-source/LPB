@@ -1,0 +1,29 @@
+-Encoder une valeur entiere
+-SI val est >0 ET < 5 afficher ">0 et <5"
+-SI val est = 7 OU =10 afficher "=7 ou =10" 
+-SI val est multp de 20 OU =30 ET val <100  afficher "OK" 
+-Dans tout les autre cas afficher "Merci"
+//////////////////////////////////////////////////////////////////////////
+
+CODE :
+
+\\ Module principal
+DÉBUT
+     
+    ECRIRE "Veuillez introduire une valeur : " 
+    LIRE val
+
+    SI val > 0 ET val < 5 ALORS
+        ECRIRE ">0 et <5" 
+    SINON 
+        SI val = 7 OU val = 10 ALORS
+            ECRIRE "=7 ou =10"
+        SINON 
+            SI (val%20 = 0 OU val = 30) ET val <100 ALORS
+                ECRIRE "OK"
+            SINON
+                ECRIRE "MERCI"
+            FINSI
+        FINSI
+    FINSI
+FIN
