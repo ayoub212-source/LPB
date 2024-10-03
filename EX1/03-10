@@ -1,0 +1,16 @@
+\\ Module principal
+DÉBUT     
+    ECRIRE "Veuillez introduire une valeur : " 
+    LIRE val
+
+    SI val < 10 ALORS
+        ECRIRE "Bonjour" 
+    SINON 
+        SI val% 10 = 0 ALORS
+            ECRIRE "À demain"
+        SINON
+            ECRIRE "Au revoir"
+        FINSI
+    FINSI
+     
+FIN
