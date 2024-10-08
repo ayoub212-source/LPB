@@ -1,0 +1,41 @@
+\\ Module principal
+DÉBUT
+    ECRIRE "EXERCICE 1  : \n"
+    prenom = ["Ayoub", "Julie", "Sam", "Yass", "Nass"]
+    competence = ["html", "css", "javascript", "php", "Java"]
+    apprenants = [["David", "Justine", "Valentin","Axel", "Redouane"], ["Julie", "Stéphane", "Mostapha", "Claudiu", "Son"]]
+    nombres = [[18,55], [29,13], [-2,15],[66,44]] 
+    maxTAB = -100000
+    \\ EX 1
+    ECRIRE "LES ELEVES DE LA CLASSE DE DEV : \n" 
+    POUR i = 1 JUSQU'A 5 FAIRE
+        ECRIRE prenom[i] , "est dans la classe de Dev"
+    FINPOUR
+    \\ EX 2
+    ECRIRE "\nLES ELEVES DE LA CLASSE DE DEV AVEC LEUR COMPETENCES : \n" 
+    POUR i = 1 JUSQU'A 5 FAIRE
+        ECRIRE prenom[i] , competence[i]
+    FINPOUR
+    \\ EX 3
+    ECRIRE "\nAFFICHER LE PLUS GRAND NOMBRE DANS LE TABLEAUX : \n"
+    POUR i = 1 JUSQU'A 4 FAIRE
+        POUR y = 1 JUSQU'A 2 FAIRE
+            SI nombres[i][y] > maxTAB ALORS
+                maxTAB = nombres[i][y]
+            FINSI
+        FINPOUR
+    FINPOUR
+    ECRIRE  "LE MAX DU TABLEAU VAUT : ", maxTAB ,"\n\n"
+    \\ EX 4
+    ECRIRE "\nAFFICHER LES ELEVES DE 2023 ET 2024 : \n"
+    POUR y = 1 JUSQU'A 5 FAIRE     
+         ECRIRE  apprenants[1][y] , "est chez les 2024" 
+    FINPOUR
+    POUR y = 1 JUSQU'A 5 FAIRE     
+         ECRIRE  apprenants[2][y] , "est chez les 2023" 
+    FINPOUR
+
+    \\ TEST FONCTION 
+    ECRIRE "\nTEST FONCTION : " , ADDITION( 5,6)
+ 
+FIN
