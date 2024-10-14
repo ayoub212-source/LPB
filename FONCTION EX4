@@ -1,0 +1,31 @@
+\\ Module principal
+DÉBUT
+  
+ECRIRE "PRENOM : " 
+LIRE PRENOM
+ECRIRE "CLASSE : "
+LIRE CLASSE
+
+COMPETENCE = ["Francais","Anglais","Histoire","Geo"]
+
+ECRIRE FONCTION(PRENOM,CLASSE,COMPETENCE) 
+
+
+FIN
+***********************************************************
+
+
+\\ Module auxiliaire FONCTION
+
+ENTRER PRENOM, CLASSE, COMPETENCE
+
+PHRASE = PRENOM + " est en " + CLASSE + " et connait le " 
+    POUR A = 1 JUSQU'A COMPTER(COMPETENCE) FAIRE    
+            PHRASE = PHRASE + COMPETENCE[A]        
+        SI A < COMPTER(COMPETENCE) ALORS
+             PHRASE = PHRASE + ", "
+        SINON
+             PHRASE = PHRASE + "."         
+        FINSI
+     FINPOUR
+RETOURNER   PHRASE
